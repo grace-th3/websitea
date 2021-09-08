@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dumpy</title>
+</head>
+<style>
+
+body {
+    margin:0;
+    overflow: scroll;
+    width: 100%;
+}
+.myHeader {
+    grid-area: banner;
+    background-color: violet;
+    display: grid;
+}
+.myHeader h1{
+    place-content: center;
+}
+
+.myHeader img {
+    place-content: center;
+}
+ .wrapper {
+        display :grid;
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-areas: "banner banner banner"
+                             "nav body side"
+                             "sha dha gha"
+                             "footer footer footer"
+        }
+
+
+.myBody{
+    background-color:olive;
+    grid-area: body;
+    padding: 0 80px 10px;
+    line-height: 150%;
+}
+.myVody{
+    background-color:olive;
+    grid-area: gha;
+    padding: 0 80px 10px;
+    line-height: 150%;
+
+}
+
+.myLody{
+    background-color:olive;
+    grid-area: dha;
+    padding: 0 80px 10px;
+    line-height: 150%;
+
+}
+.myGody{
+    background-color:olive;
+    grid-area: sha;
+    padding: 0 80px 10px;
+    line-height: 150%;
+
+}
+.footer {
+    grid-area: footer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: orchid;
+    font-size: medium;
+    color: royalblue;
+    bottom: 0;
+    width: 100%;
+
+
+}
+
+.myMovies {
+    grid-area: side;
+    background-color: purple;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.myInd {
+    grid-area : nav;
+    background-color:darkgreen; 
+    text-decoration: none;       
+}
+
+@media (max-width: 700px) {
+    .myInd {
+                position : fixed;
+                top : 90px;
+                left : -150px;
+                width : 200px;
+                padding : 0 10px 50px;
+                border-style: solid;
+                border-width : thin;
+                opacity : 0%;
+                transition : 1s;
+            }
+
+            .myInd p {
+                background-color: bisque;
+                width : 50%;
+                padding : 10px;
+                margin : 0 auto;
+                margin-bottom : 10px;
+                border-style: solid;
+                border-width : thin;
+                transition :.5s;
+
+            }
+            .myInd p:hover {
+                background-color: black;
+                color: blanchedalmond;
+            }
+}
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <!-- Code for banner  -->
+        <div class="myHeader">
+            <a
+                href="https://grace-th3.github.io/website1/">
+            <img src="g-removebg-preview.png"alt="FAVicon" width=80px>
+        </a>
+            <h1 id="myBanner">dumpy</h1>
+        </div>
+    
+    <!-- Code for index panel -->
+    <div class="myInd" href="http://127.0.0.1:5500/movies.html" id="myIndID">
+        <a href=
+        <h1>Movies</h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae veniam voluptatem mollitia expedita est eum. Iure perspiciatis delectus tempore, aut, doloribus quaerat consequatur fugiat nobis beatae odit ipsum explicabo unde.
+    </div>
+        <!-- Code for news panel -->
+        <div class="myMovies">
+            <h2>Ipsum</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+    
+        <!-- Code for the main body panel -->
+        <div class="myBody">
+            <h2>ajsjajs</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+
+        <!-- Code for the main body panel -->
+        <div class="myVody">
+            <h2>asods</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+    
+        <!-- Code for the main body panel -->
+        <div class="myLody">
+            <h2>djadad</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+        <!-- Code for the main body panel -->
+        <div class="myGody">
+            <h2>sadaidj</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt. Nulla nesciunt ipsam amet provident modi eius explicabo odio atque iure. Saepe placeat minus id doloribus vel illum impedit ipsum.
+        </div>
+        
+        <div class="footer">
+            Grace Thomas
+            <a
+                href="https://www.instagram.com/">
+            <img src="instagram.jpg"alt="Instagram" width=20px height="20px">
+        </a>
+            <p><a
+                href="https://twitter.com/">
+            <img src="twitter.png"alt="Twitter" width=20px height="20px">
+        </a> </p>
+            <p><a
+                href="https://www.tiktok.com/en/">
+            <img src="tiktok.png"alt="Tiktok" width=20px height="20px">
+        </a> </p>
+            <p><a
+                href="https://www.youtube.com/">
+            <img src="youtube.png"alt="Youtube" width=20px height="20px">
+        </a> </p>
+
+        </div>
+    </div>
+</body>
